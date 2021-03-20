@@ -3,7 +3,7 @@
 <head>
   <style>
     .changelog-main-content {
-        max-width: 900px;
+        max-width: 800px;
         margin: 40px auto;
     }
 
@@ -35,7 +35,7 @@
         padding-left: 20px;
     }
 
-    .changelog-screenshot {
+    .changelog-screenshot { /* Do we need it? */
         display: block;
         box-shadow: 0 5px 25px 0 #ccc;
         border-radius: 5px;
@@ -104,71 +104,109 @@
             max-width: 300px;
         }
     }
+
+    /************/
+
+    img {
+      border-radius: 4px;
+      box-shadow: 0px 1px 1px 0px rgba(9, 30, 66, 0.25), 0px 0px 1px 0px rgba(9, 30, 66, 0.31); /* elevation e100 */
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+
+    .image-row {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0 auto;
+    }
+
+    .with-two-images img {
+      max-width: calc(50% - 8px);
+    }
+
+    .with-three-images img {
+      max-width: calc(33.33% - 2 * 8px);
+    }
+
+    .elevation-e200 {
+        box-shadow: 0px 3px 5px 0px rgba(9, 30, 66, 0.2), 0px 0px 1px 0px rgba(9, 30, 66, 0.31);
+    }
+
+    .elevation-e300 {
+        box-shadow: 0px 8px 12px 0px rgba(9, 30, 66, 0.15), 0px 0px 1px 0px rgba(9, 30, 66, 0.31);
+    }
+
+    .small {
+      color: #6B778C; /* N200 - Bling bling */
+      font-size: 0.8em; /* This needs to be fixed */
+    }
+    
   </style>
 </head>
 <body>
   <div class="changelog-main-content">
+
     <header class="post-header">
-        <h2>February 2021 update: Private estimation sessions</h2>
+        <h2>Templates for Issue Descriptions and more!</h2>
         <span class="aui-lozenge aui-lozenge-success post-type">NEW RELEASE</span>
-        <span class="date" date-to-format="2021-03-11T08:24:00"></span>
+        <span class="date" date-to-format="2021-03-11T15:00:00"></span> <!-- Please adjust this to be as close to the actual release date as possible -->
     </header>
     <section>
       <div class="column">
-          <p>
-            This month we present the ability to create several sessions of one type per board.
-            For now, <strong>Relative</strong> and <strong>Bucket Sizing</strong> sessions are supported with
-            Interactive and Asynchronous sessions support coming shortly.
-          </p>
-          <p>The new release includes:</p>
-          <ul>
-              <li>support of multiple estimation sessions of Relative and Bucket Sizing types;</li>
-              <li>quick join option for the 3 latest sessions;</li>
-              <li>all-sessions page with active and finished sessions list and sessions filtering options.</li>
-          </ul>
-          <img width="400" style="display: block; margin: 30px auto;"
-                class="box-shadow" src="https://canned-responses-spartez-software.github.io/images/test.png" alt="Quick join option" />
+  
+        <h3>Templates, templates everywhere</h3>
 
-          <h4>Other updates:</h4>
-          <ul>
-              <li>improved estimation field selection for Kanban boards;</li>
-              <li>improved session sharing via links for projects with multiple boards;</li>
-              <li>discontinued support of old UI;</li>
-              <li>performance, stability, and security improvements.</li>
-          </ul>
+        <!-- We have recently added ability to creates for not only Comments, but also issue Descritpions.<br/> -->
+        <p>You can now <strong>create bug reports</strong>, <strong>user stories</strong>, and basically any <strong>issue description</strong> as conveniently as you have been using comments templates.</p>
+
+        <!--<img style="width: 50%; float: left;" class="changelog-screenshot" src="https://canned-responses-spartez-software.github.io/images/test.png" alt="" />
+        [GIF here with selecting template for descritpoin]-->
+
+        <div class="image-row with-two-images">
+          <img class="elevation-e300" src="images/20210322 Create - Description field - Modal.png" alt="Create - Description field - Modal" />
+          <img class="elevation-e300" src="images/20210322 Description - Inserting.png" alt="Description - Inserting" />
+        </div>
+
+        <p class="small">Please note that this is currently available only with our official <a href="https://confluence.spartez-software.com/pages/viewpage.action?pageId=81887758" rel="noopener noreferrer" target="_blank">browser extension</a> – for <a href="https://chrome.google.com/webstore/detail/canned-responses-for-jira/abiklfpogpkkcelofcplnokkehjgmchc" rel="noopener noreferrer" target="_blank">Chrome</a>, <a href="https://microsoftedge.microsoft.com/addons/detail/canned-responses-for-jira/aaihcmfhjhpblfehcjfgadlcaokkaomd">Edge</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/canned-responses-for-jira/" rel="noopener noreferrer" target="_blank">Firefox</a>.
+        Please install it if you haven't already!</p>
+
+        
+
+        <h4>How to create a Description template?</h4>
+
+        <p>Just create a tempalte as usual but select "Issue descriptions" in the "<strong>Terget fields</strong>" section.</p>
+        
+        <p>"Target fields" let you to decide where the template should be suggested. For example, it will not show in "Insert template..." dropdown for new comments, when you leave "Comments" unselected. This is to show templates only where they belong to and <strong>prevent mess</strong>.</p>
+
+        <h4>Let us know what you think</h4>
+        <p>Are there any <strong>other Jira fields</strong> that you would like to have templates for?</p>
+        <p>If you have any comments or ideas – please do let us know by taking this <a href="https://forms.gle/27QAreYXDR4Mqnqf8" rel="noopener noreferrer" target="_blank">quick survey</a> (4 questions, 2 minutes).</p>
+        
       </div>
     </section>
-    
-    <header class="post-header">
-        <h2>February 2021 update: Private estimation sessions</h2>
-        <span class="aui-lozenge aui-lozenge-success post-type">NEW RELEASE</span>
-        <span class="date" date-to-format="2021-02-13T08:24:00"></span>
-    </header>
     <section>
       <div class="column">
-          <p>
-            This month we present the ability to create several sessions of one type per board.
-            For now, <strong>Relative</strong> and <strong>Bucket Sizing</strong> sessions are supported with
-            Interactive and Asynchronous sessions support coming shortly.
-          </p>
-          <p>The new release includes:</p>
-          <ul>
-              <li>support of multiple estimation sessions of Relative and Bucket Sizing types;</li>
-              <li>quick join option for the 3 latest sessions;</li>
-              <li>all-sessions page with active and finished sessions list and sessions filtering options.</li>
-          </ul>
-          <img width="400" style="display: block; margin: 30px auto;"
-                class="box-shadow" src="https://complianz.io/wp-content/uploads/2019/03/placeholder.jpg.webp" alt="Quick join option" />
+  
+        <h3>Less clicks, less time</h3>
 
-          <h4>Other updates:</h4>
-          <ul>
-              <li>improved estimation field selection for Kanban boards;</li>
-              <li>improved session sharing via links for projects with multiple boards;</li>
-              <li>discontinued support of old UI;</li>
-              <li>performance, stability, and security improvements.</li>
-          </ul>
+        <p>We have changed the interaction of inserting templates, so that both dropdown and your favourite templates stay <strong>always&nbsp;visible on top of comment box</strong>. This way – you have them always under your fingertips, ready to use. It can save you a click with each comment.</p>
+
+        <img class="elevation-e300" src="images/Placeholder - short.png" alt="Composing comment with building blocks – templates as snippets." />
+
+        <p class="small">This interaction is currently available only for non-extension users. We are planning to add this feature to extension soon.</p>
+
+        <p>For true ninja mode, try using <strong>templates as building blocks</strong> for your comments – create different openings, greetings, instructions sets, endings etc. When you make them your favourites ny starring them – they will be available for your comments with literally <strong>one click</strong> from the toolbar.</p>
+
+        <h4>What can make your work easier?</h4>
+     
+        <p>We would love to hear your ideas how Canned Response can be improved so it works best for you – <a href="https://spartez-software.atlassian.net/servicedesk/customer/portal/9/group/9/create/59?summary=Canned%20Responses%20improvement%20ideas" rel="noopener noreferrer" target="_blank">let's get in touch!</a></p>
+
+
       </div>
     </section>
+
   </div>
 </body>
 </html>
