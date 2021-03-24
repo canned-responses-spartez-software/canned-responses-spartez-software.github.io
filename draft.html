@@ -7,7 +7,7 @@
         margin: 40px auto;
     }
 
-    img {
+    img { /* Defined below */
         max-width: 100%;
     }
 
@@ -82,18 +82,18 @@
         margin-top: 24px;
     }
 
-    .three-images {
+    .three-images { /* Not needed? */
         display: flex;
         margin: 25px auto;
         align-items: flex-start;
     }
 
-    .three-images img {
+    .three-images img { /* Not needed? */
         flex: 30%;
         margin: 10px;
     }
 
-    @media (max-width: 820px) {
+    @media (max-width: 820px) { /* Not needed? */
         .three-images {
             flex-wrap: wrap;
             justify-content: center;
@@ -108,8 +108,9 @@
     /************/
 
     img {
+      max-width: 100%;
       border-radius: 4px;
-      box-shadow: 0px 1px 1px 0px rgba(9, 30, 66, 0.25), 0px 0px 1px 0px rgba(9, 30, 66, 0.31); /* elevation e100 */
+      box-shadow: 0px 8px 12px 0px rgba(9, 30, 66, 0.15), 0px 0px 1px 0px rgba(9, 30, 66, 0.31); /* elevation e300 */
       margin-top: 32px;
       margin-bottom: 24px;
     }
@@ -134,13 +135,13 @@
         box-shadow: 0px 3px 5px 0px rgba(9, 30, 66, 0.2), 0px 0px 1px 0px rgba(9, 30, 66, 0.31);
     }
 
-    .elevation-e300 {
-        box-shadow: 0px 8px 12px 0px rgba(9, 30, 66, 0.15), 0px 0px 1px 0px rgba(9, 30, 66, 0.31);
+    .elevation-e100 {
+        box-shadow: 0px 1px 1px 0px rgba(9, 30, 66, 0.25), 0px 0px 1px 0px rgba(9, 30, 66, 0.31);
     }
 
     .small {
       color: #6B778C; /* N200 - Bling bling */
-      font-size: 0.8em; /* This needs to be fixed */
+      font-size: 0.8em; /* To be fixed? */
     }
     
   </style>
@@ -159,15 +160,14 @@
         <h3>Templates, templates everywhere</h3>
         <p>You can now <strong>create bug reports</strong>, <strong>user stories</strong>, and basically any <strong>issue description</strong> as conveniently as you have been using comments templates.</p>      
         <div class="image-row with-two-images">
-          <img class="elevation-e300" src="https://canned-responses-spartez-software.github.io/images/20210322 Create - Description field - Modal.png" alt="Create - Description field - Modal" />
-          <img class="elevation-e300" src="https://canned-responses-spartez-software.github.io/images/20210322 Description - Inserting.png" alt="Description - Inserting" />
+          <img src="https://canned-responses-spartez-software.github.io/images/20210322 Create - Description field - Modal.png" alt="Create - Description field - Modal" />
+          <img src="https://canned-responses-spartez-software.github.io/images/20210322 Description - Inserting.png" alt="Description - Inserting" />
         </div>
         <p class="small">Please note that this is currently available only with our official <a href="https://confluence.spartez-software.com/pages/viewpage.action?pageId=81887758" rel="noopener noreferrer" target="_blank">browser extension</a> – for <a href="https://chrome.google.com/webstore/detail/canned-responses-for-jira/abiklfpogpkkcelofcplnokkehjgmchc" rel="noopener noreferrer" target="_blank">Chrome</a>, <a href="https://microsoftedge.microsoft.com/addons/detail/canned-responses-for-jira/aaihcmfhjhpblfehcjfgadlcaokkaomd" rel="noopener noreferrer" target="_blank">Edge</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/canned-responses-for-jira/" rel="noopener noreferrer" target="_blank">Firefox</a>.
         Please install it if you haven't already!</p>
         
-        <p>This should come in handy for various communication needs – managing customer or stakeholder expectations, gathering feedback, ensuring consistence, compliance and more.</p>
-        <img class="elevation-e300" src="https://canned-responses-spartez-software.github.io/images/20210322 Description template example.png" alt="Example Description template" />
-        <p>If you know Support/Help Desk people, Product/Project Managers, Business Analysts, Designers or virtually any other people who could <strong>find this feature useful</strong> – please <strong>let them know</strong>!</p>
+        <p>This should come in handy for various communication needs of Support/Help desk personnel, Product/Project Managers, Business Analysts, Designers and others for managing customer or stakeholder expectations, gathering feedback, ensuring consistence, compliance and more.</p>
+        <img src="https://canned-responses-spartez-software.github.io/images/20210322 Description template example.png" alt="Example Description template" />
 
         <h4>How to create a Description template?</h4>
         <p>Just create a template as usual by clicking "+" button but select "Issue description" in the "<strong>Target fields</strong>" section.</p>
