@@ -112,6 +112,10 @@
       margin-bottom: 24px;
     }
 
+    .shadow {
+      box-shadow: 0px 8px 12px 0px rgba(9, 30, 66, 0.15), 0px 0px 1px 0px rgba(9, 30, 66, 0.31); /* elevation e300 */
+    }
+
     .image-row {
       display: flex;
       flex-flow: row wrap;
@@ -140,12 +144,79 @@
       color: #6B778C; /* N200 - Bling bling */
       font-size: 0.8em; /* To be fixed? */
     }
-    
+
   </style>
 </head>
 <body>
   <div class="changelog-main-content">
-    
+
+    <header class="post-header">
+      <h2>Templates Insights – Stats and Reports</h2>
+      <span class="aui-lozenge aui-lozenge-success post-type">NEW RELEASE</span>
+      <span class="date" date-to-format="2021-08-16T08:00:00"></span>
+    </header>
+    <section>
+      <div class="column">
+
+        <p>You can now track usage of your and your team's templates!</p>
+        <p>This way you can:</p>
+        <ul>
+          <li>See which templates are <strong>used most often</strong> and are <strong>most popular</strong> among your team — to know <strong>what works best</strong></li>
+          <li>See the <strong>least used</strong>, potentially abandoned templates — to <strong>clean up</strong></li>
+          <li>Analyze <strong>in which issues</strong> particular templates were — to see the <strong>full context</strong> of the communication</li>
+          <li>Discover effective <strong>personal templates</strong> used by your team — to <strong>popularize best practices</strong></li>
+          <li>Analyze detailed <strong>history log</strong> for templates — to <strong>audit</strong> the changes and usage</li>
+          <li>...and more!</li>
+        </ul>
+
+          <p><a href="https://confluence.spartez-software.com/pages/viewpage.action?pageId=88770116" rel="noopener noreferrer" target="_blank">Learn more</a></p>
+
+          <img src="https://canned-responses-spartez-software.github.io/images/20210812 Insights Table.png" alt="Insights - Table of templates and their stats" />
+          <p class="small">List of templates with their usage stats</p>
+
+
+          <h4>We're looking for ideas!</h4>
+          <p>Would you like to see more stats and insights about your templates? More granulated data? Dedicated reports?</p>
+          <p>Please <a href="https://spartez-software.atlassian.net/servicedesk/customer/portal/9/group/9/create/79?components=10081&summary=Canned%20Responses%20Insights%20%E2%80%93%20Feedback%20and%20Ideas" rel="noopener noreferrer" target="_blank">let us know!</a></p>
+
+      </div>
+    </section>
+
+
+    <header class="post-header">
+      <h2>Mobile support — Canned Responses in Jira Cloud apps!</h2>
+      <span class="aui-lozenge aui-lozenge-success post-type">NEW RELEASE</span>
+      <span class="date" date-to-format="2021-08-01T08:00:00"></span>
+    </header>
+    <section>
+      <div class="column">
+        <video width="200" style="margin: 16px 24px 24px 0; float: left;" controls="controls" name="Canned Responses in Jira Cloud app on Android phone" class="shadow" src="https://canned-responses-spartez-software.github.io/images/20210716 Canned Responses - Android.mp4"></video>
+        <p>You can use Canned Responses to insert templates in official <a href="https://www.atlassian.com/software/jira/mobile-app" rel="noopener noreferrer" target="_blank">Jira Mobile</a> and <a href="https://www.atlassian.com/software/jira/mac" rel="noopener noreferrer" target="_blank">Jira Cloud for Mac</a> apps for <strong>iPhone / iPad</strong> — get them in <a href="https://apps.apple.com/us/app/jira-cloud-by-atlassian/id1006972087" rel="noopener noreferrer" target="_blank">App Store!</a></p>
+        <p>Templates on mobile are accessible through Issue screens.<br/>Look for "<strong>Insert template</strong>" button under "Canned Responses" label.</p>
+        <p>Please note that it is <strong>not yet possible</strong> in <strong>Android</strong> <!-- <a href="https://play.google.com/store/apps/details?id=com.atlassian.android.jira.core" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" target="_blank"> Google Play</a>-->apps due to Jira limitations. We're trying to resolve it with Atlassian.</p>
+        <a href="https://confluence.spartez-software.com/pages/viewpage.action?pageId=88769975" rel="noopener noreferrer" target="_blank">Learn more</a>
+      </div>
+    </section>
+
+
+  	<header class="post-header">
+      <h2>Personal quick toolbar – one-click inserting of your starred templates</h2>
+      <span class="aui-lozenge aui-lozenge-success post-type">NEW RELEASE</span>
+      <span class="date" date-to-format="2021-07-16T08:00:00"></span>
+    </header>
+    <section>
+      <div class="column">
+        <p>You can <strong>star</strong> your most frequently used templates to add them to your <a href="https://confluence.spartez-software.com/pages/viewpage.action?pageId=88769944" rel="noopener noreferrer" target="_blank">quick toolbar</a>.</p>
+        <img src="https://canned-responses-spartez-software.github.io/images/20210716 Starring.png" alt="Starring a template in the templates table" />
+        <p>It will allow you to insert them in issues with just <strong>one click</strong>!</p>
+        <video width="800" style="margin: 32px auto 24px auto" controls="controls" name="Starring a template in the templates table" src="https://canned-responses-spartez-software.github.io/images/20210716 Quick toolbar.mov"></video>
+        <p>Starring is <strong>individual</strong> – only a person who starred a given template will see it in their quick toolbar.</p>
+        <p>Try it out and start saving time!</p>
+      </div>
+    </section>
+
+
+
     <header class="post-header">
       <h2>Multi-project templates</h2>
       <span class="aui-lozenge aui-lozenge-success post-type">NEW RELEASE</span>
@@ -170,9 +241,9 @@
     </header>
     <section>
       <div class="column">
-        
+
         <h4>Customizable Personal, Project and Global signatures</h4>
-        
+
         <p>You can now create and manage auto-populating signatures.</p>
 
         <p>We've made it flexible so that you can:</p>
@@ -183,7 +254,7 @@
             <li>restrict signatures to "<strong>Replies to customer</strong>" in Jira Service Management projects only</li>
         </ul>
         <p><a href="https://confluence.spartez-software.com/pages/viewpage.action?pageId=88768963" rel="noopener noreferrer" target="_blank">Learn more</a> about signatures in the documentation.</p>
-        
+
         <video width="800" style="margin: 32px auto 24px auto" controls="controls" name="Inserting Description template" src="https://canned-responses-spartez-software.github.io/images/20210511 Signatures.mov"></video>
 
         <p>We plan to develop Signatures even more – <a href="https://spartez-software.atlassian.net/servicedesk/customer/portal/9/group/9/create/59?components=10081&summary=Suggestions for Signatures" rel="noopener noreferrer" target="_blank">we are open to your suggestions</a>!</p>
@@ -193,11 +264,12 @@
 
         <!--<img src="https://canned-responses-spartez-software.github.io/images/20210504 App page.png" alt="Visibility scope for multiple projects" />-->
 
-        <p>The full-page experience should let you browse your templates and all the things Canned Responses related more conveniently.</p>
-
+        <p>The full-page experience should let you browse your templates and all the things Canned Responses related more conveniently.</p>v
 
       </div>
     </section>
+
+
 
     <header class="post-header">
         <h2>Full support for Description Fields.</h2>
@@ -206,7 +278,7 @@
     </header>
     <section>
       <div class="column">
-        
+
         <p>From now on, you and all of <strong>your team members can use Description templates</strong>.</p>
 
         <p>Although we recommend using our official <a href="https://confluence.spartez-software.com/pages/viewpage.action?pageId=81887758" rel="noopener noreferrer" target="_blank">browser extension</a> (for <a href="https://chrome.google.com/webstore/detail/canned-responses-for-jira/abiklfpogpkkcelofcplnokkehjgmchc" rel="noopener noreferrer" target="_blank">Chrome</a>, <a href="https://microsoftedge.microsoft.com/addons/detail/canned-responses-for-jira/aaihcmfhjhpblfehcjfgadlcaokkaomd" rel="noopener noreferrer" target="_blank">Edge</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/canned-responses-for-jira/" rel="noopener noreferrer" target="_blank">Firefox)</a>, it is also possible to insert Description templates directly from the Canned Responses panel in Issue View <strong>without installing</strong> the browser extension.</p>
@@ -218,10 +290,9 @@
         <p><a href="https://spartez-software.atlassian.net/servicedesk/customer/portal/9/group/9/create/59?summary=Canned%20Responses%20improvement%20ideas" rel="noopener noreferrer" target="_blank">Let us know</a> what would you like to be added or changed in Canned Responses!</p>
         <p>Are there any <strong>other Jira fields</strong> that you would like to have templates for?</br>If so, please take a <a href="https://forms.gle/27QAreYXDR4Mqnqf8" rel="noopener noreferrer" target="_blank">quick survey</a> (4 questions, 2 minutes).</p>
 
-
-
       </div>
     </section>
+
 
 
     <header class="post-header">
@@ -231,7 +302,7 @@
     </header>
     <section>
       <div class="column">
-  
+
         <h3>Templates, templates everywhere</h3>
         <p>You can now <strong>create bug reports</strong>, <strong>user stories</strong>, and any <strong>issue description</strong> as conveniently as you have been using comments templates.</p>
         <div class="image-row with-two-images">
@@ -240,7 +311,7 @@
         </div>
         <p class="small">Please note that we recommend to use our official <a href="https://confluence.spartez-software.com/pages/viewpage.action?pageId=81887758" rel="noopener noreferrer" target="_blank">browser extension</a> – for <a href="https://chrome.google.com/webstore/detail/canned-responses-for-jira/abiklfpogpkkcelofcplnokkehjgmchc" rel="noopener noreferrer" target="_blank">Chrome</a>, <a href="https://microsoftedge.microsoft.com/addons/detail/canned-responses-for-jira/aaihcmfhjhpblfehcjfgadlcaokkaomd" rel="noopener noreferrer" target="_blank">Edge</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/canned-responses-for-jira/" rel="noopener noreferrer" target="_blank">Firefox</a>.
         It allows better Jira integration. Please install it if you haven't already!</p>
-        
+
         <p>This enhancement should come in handy for various communication needs of Support/Help desk personnel, Product/Project Managers, Business Analysts, Designers and others for managing customer or stakeholder expectations, gathering feedback, ensuring consistency, compliance and more.</p>
         <img src="https://canned-responses-spartez-software.github.io/images/20210322 Description template example.png" alt="Example Description template" />
 
@@ -251,13 +322,14 @@
         <h4>Let us know what you think</h4>
         <p>Are there any <strong>other Jira fields</strong> that you would like to have templates for?</p>
         <p>If you have any comments or ideas, please let us know by taking this <a href="https://forms.gle/27QAreYXDR4Mqnqf8" rel="noopener noreferrer" target="_blank">quick survey</a> (4 questions, 2 minutes).</p>
-        
+
       </div>
     </section>
+
     <section>
       <div class="column">
         <br/>
-        
+
         <h3>Less clicks, less time</h3>
         <p>We have improved the interaction of inserting templates to keep dropdown, and your favourite templates always <strong>visible on top of the comment box</strong>. This way – you have them always under your fingertips, ready to use. It can save you a click with each comment.</p>
         <p>For true ninja mode, try using <strong>templates as building blocks</strong> for your comments – create different openings, greetings, instructions sets, endings etc. When you make them your favourites by starring them – they will be available for your comments with literally <strong>one click</strong> from the toolbar.</p>
